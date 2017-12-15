@@ -31,8 +31,36 @@ package assignment3;
  *
  * 
  * 
- * @author tim
+ * @author Merlin Blanchard
  */
 public abstract class Animal {
+    private final String name;
+    private final int numberOfLegs;
+    private final String speakParameter;
+    int xCoordinate;
+    int yCoordinate;
+
+    public Animal(int numberOfLegs, String speakParameter, String name) {
+        this.numberOfLegs = numberOfLegs;
+        this.speakParameter = speakParameter;
+        this.name = name;
+    }
+
+    public int getLegs() {
+        return numberOfLegs;
+    }
+
+    public String speak() {
+        return speakParameter;
+    }
+
+    public int whereAmI() {
+        return yCoordinate;
+      
+    }
+
+    public void walkTo(){
+        System.out.println();
+    }
 
 }
